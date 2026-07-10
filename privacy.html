@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zásady ochrany osobních údajů — CAIK Mentor Together</title>
+<meta name="description" content="Zásady ochrany osobních údajů aplikace CAIK Mentor Together.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">CAIK Mentor <span>Together</span></a>
+    <nav class="nav">
+      <a href="index.html#jak-to-funguje">Jak to funguje</a>
+      <a href="index.html#pro-koho">Pro koho</a>
+      <a href="index.html#funkce">Funkce</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section legal">
+    <div class="container legal-content">
+      <h1>Zásady ochrany osobních údajů</h1>
+      <p class="legal-updated">Poslední aktualizace: 10. 7. 2026</p>
+
+      <p>Tyto zásady popisují, jaké údaje aplikace CAIK Mentor Together (dále jen „aplikace“) zpracovává, k čemu se používají a jak s nimi zacházíme. Aplikaci provozuje Ondřej Kolář.</p>
+
+      <h2>1. Jaké údaje aplikace zpracovává</h2>
+      <p>Aplikace pracuje s údaji, které do ní zadá rodič nebo dítě v rámci běžného používání:</p>
+      <ul>
+        <li>Údaje o rodičovském účtu (jméno, uživatelské jméno, přihlašovací údaje).</li>
+        <li>Údaje o dětském profilu (jméno, věk, pohlaví — nepovinné, párovací kód).</li>
+        <li>Údaje o rodině (název rodiny, kód rodiny pro spárování rodiče a dítěte).</li>
+        <li>Obsah úkolů a odměn vytvořených v aplikaci (názvy, popisy, termíny, hodnota v mincích).</li>
+        <li>Text zpráv zadaný do AI chatu.</li>
+        <li>Nastavení aplikace (téma, barevná paleta, notifikace).</li>
+      </ul>
+
+      <h2>2. Jak se údaje používají</h2>
+      <p>Údaje slouží výhradně k provozu funkcí aplikace:</p>
+      <ul>
+        <li>Správa a zobrazení úkolů, odměn, kalendáře a peněženky dítěte.</li>
+        <li>Párování rodičovského a dětského profilu v rámci jedné rodiny.</li>
+        <li>Zasílání textu z AI chatu poskytovateli AI modelu (OpenRouter) za účelem vygenerování odpovědi.</li>
+        <li>Případná synchronizace dat mezi zařízeními prostřednictvím služby Supabase, pokud je v aplikaci nakonfigurována.</li>
+      </ul>
+      <p>Údaje nejsou používány pro cílenou reklamu ani prodávány třetím stranám.</p>
+
+      <h2>3. Sdílení údajů s třetími stranami</h2>
+      <p>Aplikace sdílí údaje pouze s poskytovateli, kteří jsou nutní k provozu popsaných funkcí:</p>
+      <ul>
+        <li><strong>OpenRouter</strong> — zpracovává text zpráv zadaných do AI chatu za účelem vygenerování odpovědi AI modelu.</li>
+        <li><strong>Supabase</strong> — pokud je v aplikaci nakonfigurována synchronizace, uchovává data rodiny, úkolů a odměn kvůli propojení mezi zařízeními.</li>
+      </ul>
+      <p>Žádné z těchto údajů se nepoužívají k jiným účelům, než jaké jsou uvedeny výše.</p>
+
+      <h2>4. Ukládání a zabezpečení údajů</h2>
+      <p>Data se primárně ukládají lokálně v zařízení, na kterém je aplikace používána. Pokud je nakonfigurovaná cloudová synchronizace, jsou vybraná data uložena i na straně poskytovatele Supabase. Přijímáme přiměřená opatření k ochraně dat před neoprávněným přístupem, ztrátou nebo zneužitím.</p>
+
+      <h2>5. Údaje o dětech</h2>
+      <p>Aplikace je určena k použití rodičem, který zakládá rodinný účet a vytváří nebo páruje dětský profil. Údaje o dítěti (jméno, věk, pohlaví) zadává rodič a slouží výhradně pro fungování úkolů, odměn a personalizace prostředí uvnitř rodiny. Tyto údaje nejsou sdíleny mimo účel aplikace.</p>
+
+      <h2>6. Práva uživatele</h2>
+      <p>Uživatel může požádat o výmaz nebo export svých dat a dat spravovaného dětského profilu, a to zasláním žádosti na kontaktní e-mail níže. Na žádost odpovíme v přiměřené lhůtě.</p>
+
+      <h2>7. Změny těchto zásad</h2>
+      <p>Tyto zásady můžeme čas od času aktualizovat, například při přidání nové funkce aplikace. O podstatných změnách budeme informovat v aplikaci nebo na této stránce.</p>
+
+      <h2>8. Kontakt</h2>
+      <p>Provozovatel aplikace: Ondřej Kolář, Dr. Ed. Beneše 205, 342 01 Sušice.</p>
+      <p>Dotazy k ochraně osobních údajů směrujte na: <a href="mailto:caiksupport@gmail.com">caiksupport@gmail.com</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="privacy.html">Zásady ochrany osobních údajů</a>
+      <a href="terms.html">Podmínky užívání</a>
+    </div>
+    <p>&copy; <span id="year"></span> CAIK Mentor Together. Všechna práva vyhrazena.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
