@@ -3,87 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CAIK Mentor Together — Úkoly a odměny pro celou rodinu</title>
-<meta name="description" content="CAIK Mentor Together pomáhá rodičům a dětem společně zvládat úkoly, odměny a plánování — s AI pomocníkem po ruce.">
+<title>CAIK Mentor — Rodinný asistent pro úkoly a odměny</title>
+<meta name="description" content="CAIK Mentor propojuje správu úkolů, systém odměn, rodinný kalendář a chytrého AI pomocníka. Učí děti zodpovědnosti a rodičům vrací klid.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container header-inner">
-    <div class="logo">CAIK Mentor <span>Together</span></div>
+    <a href="index.html" class="logo"><img src="assets/caik-logo.png" alt="CAIK logo"><span>CAIK Mentor</span></a>
     <nav class="nav">
       <a href="#jak-to-funguje">Jak to funguje</a>
       <a href="#pro-koho">Pro koho</a>
       <a href="#funkce">Funkce</a>
+      <a href="about.html">O nás</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
   </div>
 </header>
 
 <main>
-
   <section class="hero container">
     <div class="hero-text">
-      <h1>Úkoly a odměny, na kterých se rodina shodne</h1>
-      <p class="lead">CAIK Mentor Together spojuje rodiče a děti v jedné appce: rodič zadává úkoly a odměny, dítě je plní a sbírá mince, a AI chat pomáhá oběma stranám s plánováním.</p>
+      <h1>Konec rodinných hádek kvůli povinnostem</h1>
+      <p class="lead">CAIK Mentor je váš nový rodinný asistent. Propojuje správu úkolů, systém odměn a chytrou AI, aby děti vedl k zodpovědnosti a rodičům šetřil nervy.</p>
       <div class="cta-group">
-        <a href="#pro-koho" class="btn btn-primary">Zjistit víc</a>
-        <a href="#kontakt" class="btn btn-secondary">Kontaktovat nás</a>
+        <a href="#jak-to-funguje" class="btn btn-primary">Zjistit, jak funguje</a>
+        <a href="#kontakt" class="btn btn-secondary">Kontaktovat CAIK</a>
       </div>
     </div>
     <div class="hero-visual" aria-hidden="true">
       <div class="chat-mock">
-        <div class="chat-bubble bubble-bot">Ahoj, jsem tvůj AI pomocník. Napiš mi, s čím chceš pomoct.</div>
-        <div class="chat-bubble bubble-user">Potřebuju naplánovat úkoly na tento týden.</div>
-        <div class="chat-bubble bubble-bot">Jasně, pojďme si je rozdělit po dnech a přidat odměny.</div>
+        <div class="chat-bubble bubble-bot">Ahoj, jsem váš AI pomocník. S čím dnes rodině pomohu?</div>
+        <div class="chat-bubble bubble-user">Navrhni nám úkoly a odměny na tento týden.</div>
+        <div class="chat-bubble bubble-bot">Jasně. Návrhy připravím a rodič je před uložením schválí.</div>
       </div>
     </div>
   </section>
 
   <section id="jak-to-funguje" class="section">
     <div class="container">
-      <h2>Jak to funguje</h2>
+      <h2>Jednoduchý systém pro celou rodinu</h2>
       <div class="steps">
         <div class="step">
           <div class="step-number">1</div>
-          <h3>Rodič založí rodinu</h3>
-          <p>Vytvoří rodičovský účet, rodinu a vygeneruje párovací kód pro dítě.</p>
+          <h3>Rodič nastaví pravidla</h3>
+          <p>Rodič vytvoří rodinu, zadá primární i rozvojové úkoly a nastaví odměny podle potřeb domácnosti.</p>
         </div>
         <div class="step">
           <div class="step-number">2</div>
-          <h3>Dítě se připojí</h3>
-          <p>Zadá párovací kód a dostane se do svého vlastního, jednoduššího prostředí appky.</p>
+          <h3>Dítě se bezpečně připojí</h3>
+          <p>Rodinný kód propojí rodičovské a dětské prostředí. Každý vidí přehled přizpůsobený své roli.</p>
         </div>
         <div class="step">
           <div class="step-number">3</div>
-          <h3>Zadávají se úkoly a odměny</h3>
-          <p>Rodič vytváří denní i týdenní úkoly a odměny v obchodě, každý s vlastní hodnotou v mincích (CC).</p>
+          <h3>Dítě plní své úkoly</h3>
+          <p>Dítě má jasný plán toho, co má daný den splnit, a za dokončené úkoly získává CAIK Coins (CC).</p>
         </div>
         <div class="step">
           <div class="step-number">4</div>
-          <h3>Dítě plní a sbírá mince</h3>
-          <p>Splněné úkoly čekají na revizi rodiče, po potvrzení mince přistanou v peněžence a dají se utratit v obchodě odměn.</p>
+          <h3>Odměna přijde po schválení</h3>
+          <p>Rodič má vše pod kontrolou. Po schválení splněného úkolu může dítě své mince utratit v rodinném obchodě.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section screenshots-section">
+    <div class="container">
+      <div class="section-intro">
+        <p class="eyebrow">Přímo z aplikace</p>
+        <h2>Podívejte se, jak CAIK Mentor vypadá</h2>
+        <p>Skutečné obrazovky aplikace ukazují přehled úkolů, odměn, kalendáře i rodinného prostředí.</p>
+      </div>
+      <div class="screenshots" aria-label="Ukázky obrazovek aplikace CAIK Mentor">
+        <figure class="screenshot-card"><img src="assets/cmt4.jpg" alt="Obrazovka aplikace CAIK Mentor s přehledem úkolů" loading="lazy"><figcaption>Přehled úkolů</figcaption></figure>
+        <figure class="screenshot-card"><img src="assets/cmt6.jpg" alt="Obrazovka aplikace CAIK Mentor s kalendářem" loading="lazy"><figcaption>Kalendář</figcaption></figure>
+        <figure class="screenshot-card"><img src="assets/cmt5.jpg" alt="Obrazovka aplikace CAIK Mentor s AI chatem" loading="lazy"><figcaption>AI chat</figcaption></figure>
+        <figure class="screenshot-card"><img src="assets/cmt3.jpg" alt="Obrazovka aplikace CAIK Mentor s odměnami a CAIK Coins" loading="lazy"><figcaption>Odměny a CAIK Coins</figcaption></figure>
       </div>
     </div>
   </section>
 
   <section id="pro-koho" class="section section-alt">
     <div class="container">
-      <h2>Pro koho je CAIK Mentor Together</h2>
+      <h2>CAIK Mentor pomáhá rodičům i dětem</h2>
       <div class="cards">
         <div class="card">
-          <h3>Rodiče</h3>
-          <p>Chceš mít přehled o úkolech, odměnách a pokroku dítěte na jednom místě, bez papírových tabulek a hádek o odměnách? Tady to najdeš.</p>
+          <h3>Pro rodiče</h3>
+          <p>Jednoduše plánujte povinnosti a rozvojové úkoly, nastavujte pravidla a odměny a mějte přehled o tom, co je hotové, co čeká na splnění a co je potřeba schválit.</p>
         </div>
         <div class="card">
-          <h3>Děti</h3>
-          <p>Vlastní jednoduché prostředí s přehledem úkolů, kalendářem a obchodem odměn, kde si za splněné úkoly nakoupíš, na co máš chuť.</p>
+          <h3>Pro děti</h3>
+          <p>V bezpečném a přehledném prostředí dítě přesně vidí svůj denní plán. Za splněné úkoly získává CAIK Coins a samo si vybírá z odměn schválených rodičem.</p>
         </div>
         <div class="card">
-          <h3>Celá rodina</h3>
-          <p>Společný systém, ve kterém se úkoly a odměny domluví jednou a appka pak pomáhá je dodržovat — s AI chatem jako pomocníkem na obou stranách.</p>
+          <h3>Pro celou rodinu</h3>
+          <p>Společný kalendář a jasně nastavená pravidla pomáhají rodině držet režim, motivaci i pořádek bez zbytečných dohadů.</p>
         </div>
       </div>
     </div>
@@ -91,31 +107,31 @@
 
   <section id="funkce" class="section">
     <div class="container">
-      <h2>Co v aplikaci najdeš</h2>
+      <h2>Vše důležité na jednom místě</h2>
       <div class="features">
         <div class="feature">
-          <h3>Úkoly a priority</h3>
-          <p>Denní i týdenní úkoly, rozdělené na primární a sekundární, řazené podle termínu a důležitosti.</p>
+          <h3>Úkoly a pravidla</h3>
+          <p>Rodič zadává primární povinnosti i rozvojové úkoly a nastavuje, co má dítě splnit v daný den, týden nebo termín.</p>
         </div>
         <div class="feature">
-          <h3>Obchod s odměnami</h3>
-          <p>Rodič nastavuje odměny a jejich cenu v mincích, dítě si za nasbírané mince vybírá v obchodě.</p>
+          <h3>CAIK Coins a odměny</h3>
+          <p>Za dokončené úkoly dítě získává virtuální měnu CAIK Coins (CC). Rodič předem schválí odměny a jejich cenu v rodinném obchodě.</p>
         </div>
         <div class="feature">
-          <h3>Kalendář</h3>
-          <p>Přehledný pohled na termíny úkolů, aby nikomu nic neuteklo.</p>
+          <h3>Rodinný kalendář</h3>
+          <p>Úkoly a termíny jsou přehledně zobrazené v kalendáři, takže všichni vědí, co je čeká dnes, tento týden i v dalších dnech.</p>
         </div>
         <div class="feature">
-          <h3>AI chat pomocník</h3>
-          <p>Chat poháněný AI modelem, který umí navrhnout nové úkoly nebo odměny přímo do systému.</p>
+          <h3>Bezpečný AI pomocník</h3>
+          <p>AI chat může rodičům navrhovat nové úkoly nebo odměny. Žádná zásadní akce se neprovede bez potvrzení rodiče.</p>
         </div>
         <div class="feature">
           <h3>Oddělené role</h3>
-          <p>Rodič a dítě mají každý svoje vlastní prostředí a ovládání uzpůsobené jejich roli.</p>
+          <p>Rodičovské a dětské prostředí jsou bezpečně propojená rodinným kódem a každé je přizpůsobené potřebám dané role.</p>
         </div>
         <div class="feature">
-          <h3>Nastavení na míru</h3>
-          <p>Výběr tématu a barevné palety, úprava profilu a notifikací podle potřeby rodiny.</p>
+          <h3>Více klidu doma</h3>
+          <p>CAIK Mentor pomáhá převést domluvená pravidla do jasného systému, který podporuje zodpovědnost dětí a ulehčuje organizaci rodičům.</p>
         </div>
       </div>
     </div>
@@ -123,8 +139,8 @@
 
   <section id="kontakt" class="section section-alt">
     <div class="container contact">
-      <h2>Máš dotaz nebo zájem o spolupráci?</h2>
-      <p>Napiš nám, ozveme se co nejdřív.</p>
+      <h2>Máte dotaz nebo zájem o spolupráci?</h2>
+      <p>Napište nám. Ozveme se co nejdříve.</p>
       <div class="contact-links">
         <a class="btn btn-primary" href="mailto:caikmentor@gmail.com">caikmentor@gmail.com</a>
         <a class="btn btn-secondary" href="mailto:caiksupport@gmail.com">Podpora: caiksupport@gmail.com</a>
@@ -134,16 +150,16 @@
       </div>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-links">
+      <a href="about.html">O nás</a>
       <a href="privacy.html">Zásady ochrany osobních údajů</a>
       <a href="terms.html">Podmínky užívání</a>
     </div>
-    <p>&copy; <span id="year"></span> CAIK Mentor Together. Všechna práva vyhrazena.</p>
+    <p>&copy; <span id="year"></span> CAIK Mentor. Všechna práva vyhrazena.</p>
   </div>
 </footer>
 
