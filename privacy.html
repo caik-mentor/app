@@ -26,15 +26,15 @@
   <section class="section legal">
     <div class="container legal-content">
       <h1>Zásady ochrany osobních údajů</h1>
-      <p class="legal-updated">Poslední aktualizace: 10. 7. 2026</p>
+      <p class="legal-updated">Poslední aktualizace: 29. 8. 2026</p>
 
       <p>Tyto zásady popisují, jaké údaje aplikace CAIK Mentor (dále jen „aplikace“) zpracovává, k čemu se používají a jak s nimi zacházíme. Vývojářem aplikace je CAIK.</p>
 
       <h2>1. Jaké údaje aplikace zpracovává</h2>
       <p>Aplikace pracuje s údaji, které do ní zadá rodič nebo dítě v rámci běžného používání:</p>
       <ul>
-        <li>Údaje o rodičovském účtu (jméno, uživatelské jméno, přihlašovací údaje).</li>
-        <li>Údaje o dětském profilu (jméno, věk, pohlaví — nepovinné, párovací kód).</li>
+        <li>Údaje o rodičovském účtu (e-mailová adresa, zobrazované jméno a účet spravovaný službou Supabase Authentication).</li>
+        <li>Údaje o dětském profilu (jméno, věk, pohlaví — nepovinné, párovací kód a technický anonymní identifikátor pro zabezpečené připojení zařízení).</li>
         <li>Údaje o rodině (název rodiny, kód rodiny pro spárování rodiče a dítěte).</li>
         <li>Obsah úkolů a odměn vytvořených v aplikaci (názvy, popisy, termíny, hodnota v mincích).</li>
         <li>Text zpráv zadaný do AI chatu.</li>
@@ -47,7 +47,7 @@
         <li>Správa a zobrazení úkolů, odměn, kalendáře a peněženky dítěte.</li>
         <li>Párování rodičovského a dětského profilu v rámci jedné rodiny.</li>
         <li>Zasílání textu z AI chatu poskytovateli AI modelu (OpenRouter) za účelem vygenerování odpovědi.</li>
-        <li>Případná synchronizace dat mezi zařízeními prostřednictvím služby Supabase, pokud je v aplikaci nakonfigurována.</li>
+        <li>Synchronizace dat mezi zařízeními prostřednictvím služby Supabase, pokud uživatel používá cloudové funkce aplikace.</li>
       </ul>
       <p>Údaje nejsou používány pro cílenou reklamu ani prodávány třetím stranám.</p>
 
@@ -60,18 +60,23 @@
       <p>Žádné z těchto údajů se nepoužívají k jiným účelům, než jaké jsou uvedeny výše.</p>
 
       <h2>4. Ukládání a zabezpečení údajů</h2>
-      <p>Data se primárně ukládají lokálně v zařízení, na kterém je aplikace používána. Pokud je nakonfigurovaná cloudová synchronizace, jsou vybraná data uložena i na straně poskytovatele Supabase. Přijímáme přiměřená opatření k ochraně dat před neoprávněným přístupem, ztrátou nebo zneužitím.</p>
+      <p>Některá nastavení a data se ukládají lokálně v zařízení. Data potřebná pro přihlášení, propojení rodiny a synchronizaci se ukládají v databázi Supabase. Rodičovské účty používají Supabase Authentication; hesla spravuje Supabase a aplikace je neukládá do vlastních tabulek. Přenos dat probíhá přes šifrované připojení HTTPS/TLS. Přijímáme přiměřená opatření k ochraně dat před neoprávněným přístupem, ztrátou nebo zneužitím.</p>
 
       <h2>5. Údaje o dětech</h2>
-      <p>Aplikace je určena k použití rodičem, který zakládá rodinný účet a vytváří nebo páruje dětský profil. Údaje o dítěti (jméno, věk, pohlaví) zadává rodič a slouží výhradně pro fungování úkolů, odměn a personalizace prostředí uvnitř rodiny. Tyto údaje nejsou sdíleny mimo účel aplikace.</p>
+      <p>Aplikace je určena k použití rodičem, který zakládá rodinný účet a vytváří nebo páruje dětský profil. Údaje o dítěti (jméno, věk, pohlaví) zadává rodič a slouží výhradně pro fungování úkolů, odměn a personalizace prostředí uvnitř rodiny. Dítě se připojuje párovacím kódem a aplikace pro zabezpečení vytvoří technický anonymní účet Supabase Authentication bez e-mailu a hesla dítěte. Rodič nebo zákonný zástupce odpovídá za dohled nad používáním aplikace.</p>
 
-      <h2>6. Práva uživatele</h2>
-      <p>Uživatel může požádat o výmaz nebo export svých dat a dat spravovaného dětského profilu, a to zasláním žádosti na kontaktní e-mail níže. Na žádost odpovíme v přiměřené lhůtě.</p>
+      <h2>6. Mazání účtu a dat</h2>
+      <p>Přihlášený rodič může v aplikaci použít funkci „Trvale smazat účet a rodinu“. Po potvrzení se smaže rodičovský účet, dětský profil, členství rodiny, úkoly, odměny, nákupy a stav mincí v databázi Supabase a odstraní se navázané účty Supabase Authentication. Akce je trvalá a nelze ji vrátit.</p>
+      <p>O smazání účtu a souvisejících dat lze požádat také e-mailem na <a href="mailto:caiksupport@gmail.com">caiksupport@gmail.com</a>. V žádosti uveď e-mail rodičovského účtu a požadavek na smazání rodiny. Pokud žádost podává dítě, musí ji potvrdit rodič nebo zákonný zástupce.</p>
+      <p>Samotné odinstalování aplikace nemusí odstranit cloudová data. Pro jejich odstranění použij funkci trvalého smazání nebo kontaktuj podporu.</p>
 
-      <h2>7. Změny těchto zásad</h2>
+      <h2>7. Práva uživatele</h2>
+      <p>Uživatel může požádat o přístup, opravu, export nebo výmaz svých dat a dat spravovaného dětského profilu prostřednictvím uvedeného kontaktního e-mailu.</p>
+
+      <h2>8. Změny těchto zásad</h2>
       <p>Tyto zásady můžeme čas od času aktualizovat, například při přidání nové funkce aplikace. O podstatných změnách budeme informovat v aplikaci nebo na této stránce.</p>
 
-      <h2>8. Kontakt</h2>
+      <h2>9. Kontakt</h2>
       <p>Vývojář aplikace: CAIK.</p>
       <p>Dotazy k ochraně osobních údajů směrujte na: <a href="mailto:caiksupport@gmail.com">caiksupport@gmail.com</a>.</p>
     </div>
